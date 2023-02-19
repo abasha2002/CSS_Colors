@@ -1,0 +1,611 @@
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url(../fonts/RedHatDisplay-Regular.ttf);
+}
+@font-face {
+    font-family: 'Red Rose';
+    src: url(../fonts/RedRose-Regular.ttf);
+}
+@font-face {
+    font-family: 'Rufina';
+    src: url(../fonts/Rufina-Regular.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px
+}
+header{
+    padding: 35px 68px 31px 68px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000000;
+}
+
+h1{
+    font-family: 'Rufina';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+}
+
+ul{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+a{
+    font-family: 'Red Rose';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+input{
+    padding: 14px 42px;
+    width: 336px;
+    border: 1px solid #4B4B4B;
+    border-radius: 4px;
+
+    background-image: url(../images/search.svg);
+    background-position-y: center;
+    background-position-x: 8px;
+    background-repeat: no-repeat;
+}
+::placeholder{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    color: #969494;
+}
+
+.head{
+    display: grid;
+    grid-template-columns: repeat(8, 0.1fr);
+    column-gap: 14px;
+    justify-content: center;
+    margin-top: 43px;
+}
+.head div{
+    border: 0.5px solid #EAEAEA;
+    border-radius: 10px;
+    height: 34px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.head span{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.container{
+    padding: 40px 104px 119px 104px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 86px;
+    column-gap: 64px;
+    margin-top: 45px;
+}
+
+.grid-item{
+    background-color: white;
+    display: grid;
+}
+
+.color_header{
+    display: flex;
+    justify-content: space-between;
+    height: 21px;
+}
+.color_header span{
+    margin-bottom: 5px;
+}
+.color_footer{
+    padding: 18px 19px 14px 25px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #EAEAEA;
+    border-radius: 4px;
+}
+.images img{
+    margin-left: 10px;
+}
+.color{
+    height: 50px;
+}
+.info{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    display: none;
+}
+.hex{
+    background: rgba(217, 217, 217, 0.5);
+    border-radius: 0px 10px 0px 4px;
+    width: 67px;
+    height: 20px;
+    text-align: center;
+}
+.hex span{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+.rgb{
+    width: 86px;
+    height: 20px;
+    background: rgba(217, 217, 217, 0.5);
+    border-radius: 10px 0px 4px;
+    text-align: center;
+}
+.rgb span{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.color1{
+    background: #CDF0EA;
+    border-radius: 4px;
+}
+.color2{
+    background: #F9F9F9;
+    border-radius: 4px;
+}
+.color3{
+    background: #F6C6EA;
+    border-radius: 4px;
+}
+.color4{
+    background: #FAF4B7;
+    border-radius: 4px;
+}
+.color5{
+    background: #D4ECDD;
+    border-radius: 4px;
+}
+.color6{
+    background: #345B63;
+    border-radius: 4px;
+}
+.color7{
+    background: #152D35;
+    border-radius: 4px;
+}
+.color8{
+    background: #112031;
+    border-radius: 4px;
+}
+.color9{
+    background: #F9F3DF;
+    border-radius: 4px;
+}
+.color10{
+    background: #CDF2CA;
+    border-radius: 4px;
+}
+.color11{
+    background: #FFDEFA;
+    border-radius: 4px;
+}
+.color12{
+    background: #FFC898;
+    border-radius: 4px;
+}
+.color13{
+    background: #3330E4;
+    border-radius: 4px;
+}
+.color14{
+    background: #F637EC;
+    border-radius: 4px;
+}
+.color15{
+    background: #FBB454;
+    border-radius: 4px;
+}
+.color16{
+    background: #FAEA48;
+    border-radius: 4px;
+}
+.color17{
+    background: #D9D7F1;
+    border-radius: 4px;
+}
+.color18{
+    background: #FFFDDE;
+    border-radius: 4px;
+}
+.color19{
+    background: #E7FBBE;
+    border-radius: 4px;
+}
+.color20{
+    background: #FFCBCB;
+    border-radius: 4px;
+}
+.color21{
+    background: #990000;
+    border-radius: 4px;
+}
+.color22{
+    background: #FF5B00;
+    border-radius: 4px;
+}
+.color23{
+    background: #D4D925;
+    border-radius: 4px;
+}
+.color24{
+    background: #FFEE63;
+    border-radius: 4px;
+}
+.color25{
+    background: #B91646;
+    border-radius: 4px;
+}
+.color26{
+    background: #DFD8CA;
+    border-radius: 4px;
+}
+.color27{
+    background: #FBF3E4;
+    border-radius: 4px;
+}
+.color28{
+    background: #105652;
+    border-radius: 4px;
+}
+.color29{
+    background: #CDF0EA;
+    border-radius: 4px;
+}
+.color30{
+    background: #F9F9F9;
+    border-radius: 4px;
+}
+.color31{
+    background: #F6C6EA;
+    border-radius: 4px;
+}
+.color32{
+    background: #FAF4B7;
+    border-radius: 4px;
+}
+.color33{
+    background: #FFCC1D;
+    border-radius: 4px;
+}
+.color34{
+    background: #0B4619;
+    border-radius: 4px;
+}
+.color35{
+    background: #116530;
+    border-radius: 4px;
+}
+.color36{
+    background: #E8E8CC;
+    border-radius: 4px;
+}
+.color37{
+    background: #00ffab;
+    border-radius: 4px;
+}
+.color38{
+    background: #14c38e;
+    border-radius: 4px;
+}
+.color39{
+    background: #b8f1b0;
+    border-radius: 4px;
+}
+.color40{
+    background: #e3fcbf;
+    border-radius: 4px;
+}
+.color41{
+    background: #49FF00;
+    border-radius: 4px;
+}
+.color42{
+    background: #FBFF00;
+    border-radius: 4px;
+}
+.color43{
+    background: #FF9300;
+    border-radius: 4px;
+}
+.color44{
+    background: #FF0000;
+    border-radius: 4px;
+}
+.color45{
+    background: #06283D;
+    border-radius: 4px;
+}
+.color46{
+    background: #1363DF;
+    border-radius: 4px;
+}
+.color47{
+    background: #47B5FF;
+    border-radius: 4px;
+}
+.color48{
+    background: #DFF6FF;
+    border-radius: 4px;
+}
+.color:hover .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+}
+.color:hover{
+    opacity: .8;
+}
+
+.image{
+    background-image: url(../images/color_wall.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 283px; 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.image h2{
+    font-family: 'Red Rose';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+
+.grid-container{
+    padding: 40px 104px 119px 104px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 86px;
+    column-gap: 100px;
+    margin-top: 87px;
+}
+
+.grid-images{
+    border: 1px solid #EAEAEA;
+    border-radius: 4px;
+}
+
+.grid-images img{
+    width: 100%;
+}
+.circles{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 14px;
+}
+.hexes{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 7px;
+    margin-bottom: 10px;
+}
+.hexes span{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 13px;
+    color: #5A5A5A;
+}
+
+.circle1{
+    width: 58px;
+    height: 58px;
+    background: #D12529;
+    border-radius: 100%;
+}
+.circle2{
+    width: 58px;
+    height: 58px;
+    background: #394430;
+    border-radius: 100%;
+}
+.circle3{
+    width: 58px;
+    height: 58px;
+    background: #FC739F;
+    border-radius: 100%;
+}
+.circle4{
+    width: 58px;
+    height: 58px;
+    background: #FA9F4A;
+    border-radius: 100%;
+}
+.circle5{
+    width: 58px;
+    height: 58px;
+    background: #A13583;
+    border-radius: 100%;
+}
+.circle6{
+    width: 58px;
+    height: 58px;
+    background: #FF8601;
+    border-radius: 100%;
+}
+.circle7{
+    width: 58px;
+    height: 58px;
+    background: #F2EAE7;
+    border-radius: 100%;
+}
+.circle8{
+    width: 58px;
+    height: 58px;
+    background: #430001;
+    border-radius: 100%;
+}
+.circle9{
+    width: 58px;
+    height: 58px;
+    background: #15100F;
+    border-radius: 100%;
+}
+.circle10{
+    width: 58px;
+    height: 58px;
+    background: #E59222;
+    border-radius: 100%;
+}
+.circle11{
+    width: 58px;
+    height: 58px;
+    background: #7F73B5;
+    border-radius: 100%;
+}
+.circle12{
+    width: 58px;
+    height: 58px;
+    background: #E2DFE6;
+    border-radius: 100%;
+}
+.circle13{
+    width: 58px;
+    height: 58px;
+    background: #534090;
+    border-radius: 100%;
+}
+.circle14{
+    width: 58px;
+    height: 58px;
+    background: #0E44A7;
+    border-radius: 100%;
+}
+.circle15{
+    width: 58px;
+    height: 58px;
+    background: #050408;
+    border-radius: 100%;
+}
+.circle16{
+    width: 58px;
+    height: 58px;
+    background: #F6F6F8;
+    border-radius: 100%;
+}
+.circle17{
+    width: 58px;
+    height: 58px;
+    background: #FDCF05;
+    border-radius: 100%;
+}
+.circle18{
+    width: 58px;
+    height: 58px;
+    background: #49403E;
+    border-radius: 100%;
+}
+.circle19{
+    width: 58px;
+    height: 58px;
+    background: #E6D9C9;
+    border-radius: 100%;
+}
+.circle20{
+    width: 58px;
+    height: 58px;
+    background: #F9E822;
+    border-radius: 100%;
+}
+.circle21{
+    width: 58px;
+    height: 58px;
+    background: #007CC2;
+    border-radius: 100%;
+}
+.circle22{
+    width: 58px;
+    height: 58px;
+    background: #01A0D9;
+    border-radius: 100%;
+}
+.circle23{
+    width: 58px;
+    height: 58px;
+    background: #DE9E00;
+    border-radius: 100%;
+}
+.circle24{
+    width: 58px;
+    height: 58px;
+    background: #CDDD97;
+    border-radius: 100%;
+}
+.circle25{
+    width: 58px;
+    height: 58px;
+    background: #DFD046;
+    border-radius: 100%;
+}
+.circle26{
+    width: 58px;
+    height: 58px;
+    background: #F5BCCF;
+    border-radius: 100%;
+}
+.circle27{
+    width: 58px;
+    height: 58px;
+    background: #E1D953;
+    border-radius: 100%;
+}
+.circle28{
+    width: 58px;
+    height: 58px;
+    background: #D09231;
+    border-radius: 100%;
+}
+.circle29{
+    width: 58px;
+    height: 58px;
+    background: #563E43;
+    border-radius: 100%;
+}
+.circle30{
+    width: 58px;
+    height: 58px;
+    background: #A9C12A;
+    border-radius: 100%;
+}
